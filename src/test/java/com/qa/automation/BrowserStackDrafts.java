@@ -11,8 +11,8 @@ import java.util.UUID;
 
 public class BrowserStackDrafts {
 
-    public static final String USERNAME = "pavelyampolsky1";
-    public static final String AUTOMATE_KEY = "PyrAvcDs4XBiW6soEZPp";
+    public static final String USERNAME = "test";
+    public static final String AUTOMATE_KEY = "key";
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     public static WebDriver getBS() throws Exception {
