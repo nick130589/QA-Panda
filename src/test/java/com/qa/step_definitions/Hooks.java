@@ -6,11 +6,8 @@ import cucumber.api.java.Before;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.codeborne.selenide.WebDriverRunner;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -27,7 +24,6 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-import static com.qa.automation.BrowserStackDrafts.getBS;
 
 public class Hooks {
 
@@ -47,7 +43,6 @@ public class Hooks {
         tagFlags.put("desktopTest", scenario.getSourceTagNames().contains(DESKTOP_TAG));
         tagFlags.put("mobileTest", scenario.getSourceTagNames().contains(MOBILE_TAG));
 
-        //WebDriverRunner.setWebDriver(getBS());
         open("");
     }
 
